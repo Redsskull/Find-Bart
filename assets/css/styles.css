@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Trispace:wght@200&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -9,4 +11,63 @@
 body {
     background-image: url("../images/background.jpg");
     background-size: cover;
+    font-family: "Triscape", sans-serif;
+    color: white;
+    text-shadow: -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+h3 {
+    height: 20svh;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+    #game-area {margin-top: 10svh;
+    display: inline-flex;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 20svh;
+    transform: translate3d(-127px, 34px, 10px);
+    }
+
+#planet1{
+    background: url(../images/planet1.jpg);
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-size: cover;
+    margin: 10px;
+}
+
+#planet2{
+    background: url(../images/planet2.jpg);
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-size: cover;
+    margin: 10px;
+}
+
+#planet3{
+    background: url(../images/planet3.jpg);
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-size: cover;
+    margin: 10px;
+}
+
+footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    box-sizing: border-box;
+    text-align: center;
 }
