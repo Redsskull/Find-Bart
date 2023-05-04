@@ -41,31 +41,25 @@ h3 {
 
 #planet1{
     background: url(../images/planet1.jpg);
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
     background-size: cover;
-    margin: 15px;
 }
 
 #planet2{
     background: url(../images/planet2.jpg);
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
     background-size: cover;
-    margin: 15px;
 }
 
 #planet3{
     background: url(../images/planet3.jpg);
+    background-size: cover;
+}
+
+.planets{
     height: 200px;
     width: 200px;
     border-radius: 50%;
-    background-size: cover;
     margin: 15px;
 }
-
 .planets:hover{
     transform: scale(1.2);
     margin-left: 20px
@@ -89,5 +83,12 @@ footer{
     align-items: center;
     margin-top: 5vh;
     transform: none;
+    }
+
+    .planets{
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    margin: 15px;
     }
 }
