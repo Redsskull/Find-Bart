@@ -29,7 +29,8 @@ h3 {
     flex-direction: column-reverse;
 }
 
-    #game-area {margin-top: 10svh;
+#game-area {
+    margin-top: 10svh;
     display: inline-flex;
     flex-wrap: wrap;
     position: fixed;
@@ -78,3 +79,13 @@ footer{
     box-sizing: border-box;
     text-align: center;
 }
+
+@media only screen and (max-width: 768px) {
+    #game-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vh;
+    transform: translate3d(0, 0, 0);
+    }
+    }
