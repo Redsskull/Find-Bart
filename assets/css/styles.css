@@ -9,6 +9,7 @@
 /*body bacground image*/
 
 body {
+    min-height: 100dvh;
     background-image: url("../images/background.jpg");
     background-size: cover;
     font-family: "Triscape", sans-serif;
@@ -24,17 +25,17 @@ body {
 }
 
 h3 {
-    height: 20svh;
+    height: 20dvh;
     display: flex;
     flex-direction: column-reverse;
 }
 
 #game-area {
-    margin-top: 10svh;
+    margin-top: 10dvh;
     display: inline-flex;
     flex-wrap: wrap;
     position: fixed;
-    top: 20svh;
+    top: 20dvh;
     transform: translate3d(-127px, 34px, 10px);
     }
 
@@ -73,7 +74,7 @@ h3 {
 
 
 footer{
-    position: absolute;
+    margin-top: auto;
     width: 100%;
     bottom: 0;
     box-sizing: border-box;
@@ -82,10 +83,11 @@ footer{
 
 @media only screen and (max-width: 768px) {
     #game-area {
+    position: static;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 5vh;
-    transform: translate3d(0, 0, 0);
+    transform: none;
     }
-    }
+}
