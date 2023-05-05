@@ -4,8 +4,42 @@
  */
 
 const buttons = document.getElementsByClassName("planets");
-const score = document.getElementById("score-area");
-const choices = ["planet1", "planey2", "planet3"];
+const choices = ["planet1", "planet2", "planet3"];
+var computerAnswer = "";
+/**
+ *functions and definitions 
+ *to hide happy and sad bart unless I want them displayed
+ */
+let happyBarts = document.getElementsByClassName("happybart");
+let grumpyBarts = document.getElementsByClassName("grumpybart");
+
+for (let happybart of happyBarts){
+    happybart.style.display = "none";
+}
+
+for (let grumpybart of grumpyBarts){
+    grumpybart.style.display = "none";
+}
+
+
+/**
+ * gets computer choice
+ * on start game
+ */
+
+const startGame = document.getElementById("start-game");
+startGame.addEventListener("click", function(){
+    for (let happybart of happyBarts){
+        happybart.style.display = "none";
+    }
+    
+    for (let grumpybart of grumpyBarts){
+        grumpybart.style.display = "none";
+    }
+    let computerChoice = choices[Math.floor(Math.random()*choices.length)]
+    console.log(computerChoice);
+    computerAnswer = computerChoice;
+});
 
 
 
@@ -14,29 +48,40 @@ const choices = ["planet1", "planey2", "planet3"];
  */
 
 
-
 for (let button of buttons) {
 
     button.addEventListener("click", function ()  {
-        let playerChoice = this.getAttribute("data-choice");
-        playGame(playerChoice)
-    });
+        let playerChoice = this.getAttribute("data-type");
+        checkWinner(playerChoice, computerAnswer);
+    }); 
 
 }
 
 /**
- * The game. accepts the player choice from 
- * the data-choice
+ * checks winner on computer choice
+ * and player choice 
  */
+function checkWinner(playerChoice, computerAnswer){
+    console.log(computerAnswer);
+    console.log(playerChoice);
+    if (playerChoice === computerAnswer){
+      let playerValue = document.querySelector(`[data-type = ${playerChoice}]`);
+      console.log(playerValue);
+      let realBart = playerValue.querySelector(".happybart");
+      realBart.style.display = "block";
+      alert("Bart: thank you, you saved me!")
+    }else{
+      let computerValue = document.querySelector(`[data-type = ${computerAnswer}]`);
+      console.log(computerValue);
+      let realBart = computerValue.querySelector(".grumpybart");
+      realBart.style.display = "block";
+      alert("Bart says: oh no, im sleeping With the frogs tonight");
 
-function playGame(playerChoice) {
-    let computerChoice = math.floor(Math.random() * 3);
+    }
 
-
-    let result = checkWinner(choices[computerChoice.choice], choices[playerChoice]);
-
-    updateScore(result);
 }
+
+
 
 /**
  * button text change on click to display rules
