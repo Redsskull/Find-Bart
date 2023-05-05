@@ -1,11 +1,12 @@
 /**
  * Decalring constants for the DOM elements
- * and possible chouices
+ * and possible choices
  */
 
 const buttons = document.getElementsByClassName("planets");
 const score = document.getElementById("score-area");
 const choices = ["planet1", "planey2", "planet3"];
+
 
 
 /**
@@ -32,4 +33,16 @@ function playGame(playerChoice) {
     let result = checkWinner(choices[computerChoice.choice], choices[playerChoice]);
 
     updateScore(result);
+}
+
+/**
+ * button text change on click to display rules
+ */
+
+function showRules(){
+    let rules = document.getElementById("my-rules");
+    if (rules.style.display === "none") {
+        rules.style.display = "block";
+    }else
+    rules.style.display = "none";
 }
