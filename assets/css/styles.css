@@ -41,11 +41,9 @@ h3 {
 }
 
 #game-area {
-    margin-top: 25dvh;
+    margin-top: 2dvh;
     display: inline-flex;
     flex-wrap: wrap;
-    position: fixed;
-    top: 20dvh;
 }
 
 button {
@@ -61,7 +59,7 @@ button {
     font-style: oblique;
 }
 
-
+/*planet and button style*/
 
 #planet1 {
     background: url(../images/planet1.jpg);
@@ -96,7 +94,7 @@ button {
     margin-top: 2dvh;
 }
 
-
+/*footer*/
 
 footer {
     margin-top: auto;
@@ -105,6 +103,8 @@ footer {
     box-sizing: border-box;
     text-align: center;
 }
+
+/* media queryes for game area and planet size*/
 
 @media only screen and (max-width: 768px) {
     #game-area {
