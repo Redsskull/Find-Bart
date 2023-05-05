@@ -24,6 +24,14 @@ body {
     align-items: center;
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
 h3 {
     height: 20dvh;
     display: flex;
@@ -31,13 +39,20 @@ h3 {
 }
 
 #game-area {
-    margin-top: 10dvh;
+    margin-top: 20dvh;
     display: inline-flex;
     flex-wrap: wrap;
     position: fixed;
     top: 20dvh;
-    transform: translate3d(-127px, 34px, 10px);
     }
+button {
+    border: #000;
+    font-size: 1em;
+    text-decoration: solid;
+    color: green;
+    padding: 12px;
+    background-color: aqua;
+}
 
 #planet1{
     background: url(../images/planet1.jpg);
@@ -65,6 +80,8 @@ h3 {
     margin-left: 20px
 
 }
+
+
 
 
 footer{
