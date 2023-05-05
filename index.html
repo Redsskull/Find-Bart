@@ -20,16 +20,18 @@
     <h3>Bart is lost! click the right planet to find him.</h3>
     <button onclick="startGame()">Start Game!</button>
     <div id="game-area">
-    <div id="planet1" class="planets"><a aria-label="planet1" data-choice="1"></a></div>
-    <div id="planet2" class="planets"><a aria-label="planet2" data-choice="2"></a></div>
-    <div id="planet3" class="planets"><a aria-label="planet3" data-choice="3"></a></div>
+    <div id="planet1" class="planets"><a aria-label="planet1" data-choice="0"></a></div>
+    <div id="planet2" class="planets"><a aria-label="planet2" data-choice="1"></a></div>
+    <div id="planet3" class="planets"><a aria-label="planet3" data-choice="2"></a></div>
 
     <div id="score-keeper"></div>
     </div>
 
     <div id="score area"></div>
-    <h4 class="scores">Bart saved: <span id="bart-saved">0</span></h4> <h4 class="scores">Bart lost: <span id="bart-lost">0</span></h4>
   </main>
+  <div id="score-area">
+  <h4 class="scores">Bart saved: <span id="bart-saved">0</span></h4> <h4 class="scores">Bart lost: <span id="bart-lost">0</span></h4>
+  </div>
 
   <footer>Did you know Bart loves basketball? <i class="fa-solid fa-basketball"></i></footer>
     <script src="assets/js/script.js"></script>

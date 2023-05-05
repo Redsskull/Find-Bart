@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-/*body bacground image*/
+/*body universal flexbox settings*/
 
 body {
     min-height: 100dvh;
@@ -23,7 +23,7 @@ body {
     width: 100%;
     align-items: center;
 }
-
+/*main and game area*/
 main{
     display: flex;
     flex-direction: column;
@@ -39,7 +39,7 @@ h3 {
 }
 
 #game-area {
-    margin-top: 20dvh;
+    margin-top: 25dvh;
     display: inline-flex;
     flex-wrap: wrap;
     position: fixed;
@@ -87,6 +87,11 @@ button {
 
 }
 
+/*score area*/
+
+#score-area{
+    margin-top: 2dvh;
+}
 
 
 
