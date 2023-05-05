@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Trispace:wght@200&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,16 +15,18 @@ body {
     font-family: "Triscape", sans-serif;
     color: white;
     text-shadow: -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;;
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    ;
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center;
 }
+
 /*main and game area*/
-main{
+main {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -44,58 +46,59 @@ h3 {
     flex-wrap: wrap;
     position: fixed;
     top: 20dvh;
-    }
+}
+
 button {
-    border:#fdcdab;
+    border: #fdcdab;
     border-style: solid;
     font-size: 1em;
     text-decoration: solid;
     color: #fdcdab;
     padding: 30px;
-    background-color:#0a3b4f;
+    background-color: #0a3b4f;
     margin-top: 5dvh;
     border-radius: 30%;
-    font-style:oblique;
+    font-style: oblique;
 }
 
 
 
-#planet1{
+#planet1 {
     background: url(../images/planet1.jpg);
     background-size: cover;
 }
 
-#planet2{
+#planet2 {
     background: url(../images/planet2.jpg);
     background-size: cover;
 }
 
-#planet3{
+#planet3 {
     background: url(../images/planet3.jpg);
     background-size: cover;
 }
 
-.planets{
+.planets {
     height: 200px;
     width: 200px;
     border-radius: 50%;
     margin: 15px;
 }
-.planets:hover{
+
+.planets:hover {
     transform: scale(1.2);
     margin-left: 20px
-
 }
 
 /*score area*/
 
-#score-area{
+#score-area {
     margin-top: 2dvh;
 }
 
 
 
-footer{
+footer {
     margin-top: auto;
     width: 100%;
     bottom: 0;
@@ -105,18 +108,18 @@ footer{
 
 @media only screen and (max-width: 768px) {
     #game-area {
-    position: static;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 5vh;
-    transform: none;
+        position: static;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5vh;
+        transform: none;
     }
 
-    .planets{
-    height: 140px;
-    width: 140px;
-    border-radius: 50%;
-    margin: 15px;
+    .planets {
+        height: 140px;
+        width: 140px;
+        border-radius: 50%;
+        margin: 15px;
     }
 }
