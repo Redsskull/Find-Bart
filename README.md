@@ -22,6 +22,8 @@ Find Bart is a fun game for love who love cats and space where the user must fin
 
  - Absolute footer position did not work with wrap. used margin auto instead. 
 
+ - Discovered when adding a game score div and a button that not having flex display for the main itself causes position problems. added the style properties to fix it. 
+
  ### Validator testing
 
  ## Deployment
@@ -29,6 +31,10 @@ Find Bart is a fun game for love who love cats and space where the user must fin
 - The site was deployed using Github pages. the link can be found here - https://redsskull.github.io/Find-Bart/
 
  ## Credits
+
+ ### Content
+
+ - Some of the function layout was learned and even copied(although not copy pasted, the game is different) from Matt Rudge's video in the LMS of Code Institute where he shows how to build a basic JS Rock, Paper, Scissors game.
 
 ### Media
 
