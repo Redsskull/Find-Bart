@@ -39,5 +39,7 @@ Find Bart is a fun game for love who love cats and space where the user must fin
 ### Media
 
 - All images were taken from https://www.pexels.com/
+- Grumpycat was taken from pngmart.com
+- "happy" Grumpycat was taken from edidit.com
 
 

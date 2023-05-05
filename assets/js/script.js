@@ -13,6 +13,8 @@ const choices = ["planet1", "planey2", "planet3"];
  * Add event listener to the buttons
  */
 
+
+
 for (let button of buttons) {
 
     button.addEventListener("click", function ()  {
@@ -30,6 +32,7 @@ for (let button of buttons) {
 function playGame(playerChoice) {
     let computerChoice = math.floor(Math.random() * 3);
 
+
     let result = checkWinner(choices[computerChoice.choice], choices[playerChoice]);
 
     updateScore(result);
@@ -38,11 +41,17 @@ function playGame(playerChoice) {
 /**
  * button text change on click to display rules
  */
+let showRules = document.getElementById("show-rules");
+let rules = document.getElementById("my-rules");
+rules.style.display = "none";
 
-function showRules(){
-    let rules = document.getElementById("my-rules");
+showRules.addEventListener("click", function(){
     if (rules.style.display === "none") {
         rules.style.display = "block";
     }else
-    rules.style.display = "none";
-}
+   rules.style.display = "none";
+
+})
+
+
+
