@@ -46,13 +46,19 @@ h3 {
     top: 20dvh;
     }
 button {
-    border: #000;
+    border:#fdcdab;
+    border-style: solid;
     font-size: 1em;
     text-decoration: solid;
-    color: green;
-    padding: 12px;
-    background-color: aqua;
+    color: #fdcdab;
+    padding: 30px;
+    background-color:#0a3b4f;
+    margin-top: 5dvh;
+    border-radius: 30%;
+    font-style:oblique;
 }
+
+
 
 #planet1{
     background: url(../images/planet1.jpg);
