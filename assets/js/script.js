@@ -7,7 +7,7 @@ const buttons = document.getElementsByClassName("planets");
 const choices = ["planet1", "planet2", "planet3"];
 //global variable for the computerAnswer
 var computerAnswer = "";
-
+//defining the game as false so things don't become interactive until true.
 let gameStarted = false;
 
 /**
@@ -31,14 +31,15 @@ for (let grumpybart of grumpyBarts) {
  * gets computer choice on start game click. 
  * function to hide Bart every time it is click again(for a new game)
  * and get the computer choice and store it globally.
+ * function also changes the text in the play game button.
  */
 
 const startGame = document.getElementById("start-game");
 startGame.addEventListener("click", function () {
-    
+
     if (startGame.innerText === "Start Game!" || startGame.innerText === "Play Again!") {
         startGame.innerText = "Choose a planet!";
-      }
+    }
 
     for (let happybart of happyBarts) {
         happybart.style.display = "none";
@@ -47,7 +48,7 @@ startGame.addEventListener("click", function () {
     for (let grumpybart of grumpyBarts) {
         grumpybart.style.display = "none";
     }
-    let computerChoice = choices[Math.floor(Math.random() * choices.length)]
+    let computerChoice = choices[Math.floor(Math.random() * choices.length)];
     computerAnswer = computerChoice;
     gameStarted = true;
 });
@@ -62,9 +63,9 @@ startGame.addEventListener("click", function () {
 for (let button of buttons) {
 
     button.addEventListener("click", function () {
-        if(gameStarted){
-        let playerChoice = this.getAttribute("data-type");
-        checkWinner(playerChoice, computerAnswer);
+        if (gameStarted) {
+            let playerChoice = this.getAttribute("data-type");
+            checkWinner(playerChoice, computerAnswer);
         }
     });
 
@@ -79,10 +80,10 @@ function checkWinner(playerChoice, computerAnswer) {
         let playerValue = document.querySelector(`[data-type = ${playerChoice}]`);
         let realBart = playerValue.querySelector(".happybart");
         realBart.style.display = "block";
-        alert("Bart: thank you, you saved me!")
+        alert("Bart: thank you, you saved me!");
         bartSaved();
         gameStarted = false;
-        startGame.innerText = "Play Again!"
+        startGame.innerText = "Play Again!";
 
     } else {
         let computerValue = document.querySelector(`[data-type = ${computerAnswer}]`);
@@ -91,7 +92,7 @@ function checkWinner(playerChoice, computerAnswer) {
         alert("Bart says: oh no, im sleeping With the frogs tonight");
         bartLost();
         gameStarted = false;
-        startGame.innerText = "Play Again!"
+        startGame.innerText = "Play Again!";
 
     }
 
@@ -128,7 +129,7 @@ showRules.addEventListener("click", function () {
     } else
         rules.style.display = "none";
 
-})
+});
 
 
 

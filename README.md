@@ -41,6 +41,14 @@ Find Bart is a fun game for love who love cats and space where the user must fin
 
  ### Validator testing
 
+- HTML
+  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fredsskull.github.io%2FFind-Bart%2F)
+- CSS
+  - No errors were found when passing through the official [Jigsaw validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fredsskull.github.io%2FFind-Bart%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+- JS
+  - No errors were found when passing through the official Jshint validator ![Jshint validator](/Find-Bart/assets/images/jshint.jpg)
+  
+
  ## Deployment
 
 - The site was deployed using Github pages. the link can be found here - https://redsskull.github.io/Find-Bart/
@@ -57,4 +65,6 @@ Find Bart is a fun game for love who love cats and space where the user must fin
 - Grumpycat was taken from pngmart.com
 - "happy" Grumpycat was taken from edidit.com
 
+- Special thanks to my friend Alex (https://www.linkedin.com/in/victoralexandrumihai/) who took the time to be my tutor when I was stuck. I couldn't have done this as I did without your help.
 
+- Very special thanks to my mentor lauren (https://www.linkedin.com/in/lauren-nicole-popich/) who went out of her way in listening to any questions I had during this work and helped as best as she could have. 
