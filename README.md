@@ -14,11 +14,18 @@ Find Bart is a fun game for love who love cats and space where the user must fin
 
 - __background image__
 
-- The entire game has a background image of space with all features being layed on it. 
+- The entire game has a background image of space with all features being layed on it. (it can be seen in the game area image)
 
 - __The footer__
 
 - The footer is there just to be cute. features a fun fact about Bart the cat and an icon of a basketball. 
+
+![footer](/Find-Bart/assets/images/footer.jpg)
+
+### Features Left to Implement
+
+- Would like music to be played while the player is playing the game
+- looking to turn the mouse cursing into an animated cat while game is being played
 
 ## Testing
 
