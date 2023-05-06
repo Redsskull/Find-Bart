@@ -105,7 +105,7 @@ button:hover {
     left: 40%;
 }
 
-.happybart{
+.happybart {
     background-image: url(../images/happycat.png);
     background-size: cover;
     height: 100px;
@@ -113,6 +113,7 @@ button:hover {
     position: absolute;
     left: 40%;
 }
+
 /*score area*/
 
 #score-area {
@@ -121,7 +122,7 @@ button:hover {
 
 /*small margin for the rules text*/
 
-#my-rules{
+#my-rules {
     margin-top: 2dvh;
 }
 
