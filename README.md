@@ -2,11 +2,15 @@
 
 Find Bart is a fun game for love who love cats and space where the user must find the planet Bart is lost in. it has some syth music, interactive UI and can be played easily on any device anywhere. 
 
+![responsive Mockup](/Find-Bart/assets/images/responsive.jpg)
+
 ## Features
 
 - __The game area__
 
 - The 3 panets, some text about the game and a score keeper.
+
+![game area](/Find-Bart/assets/images/game-area.jpg)
 
 - __background image__
 
@@ -23,6 +27,10 @@ Find Bart is a fun game for love who love cats and space where the user must fin
  - Absolute footer position did not work with wrap. used margin auto instead. 
 
  - Discovered when adding a game score div and a button that not having flex display for the main itself causes position problems. added the style properties to fix it. 
+
+ - While making functions for the game, disocvered the need for a global function for computer value storing. 
+
+ - Found out storing a hyper link as a button in a div is a bad idea. the button became invisible. fixed by making the div the button. 
 
  ### Validator testing
 
