@@ -33,6 +33,11 @@ for (let grumpybart of grumpyBarts) {
 
 const startGame = document.getElementById("start-game");
 startGame.addEventListener("click", function () {
+    
+    if(startGame.innerText === "Start Game!"){
+        startGame.innerText = "Choose a planet!"
+    }
+
     for (let happybart of happyBarts) {
         happybart.style.display = "none";
     }
@@ -70,15 +75,33 @@ function checkWinner(playerChoice, computerAnswer) {
         let realBart = playerValue.querySelector(".happybart");
         realBart.style.display = "block";
         alert("Bart: thank you, you saved me!")
+        bartSaved();
+
     } else {
         let computerValue = document.querySelector(`[data-type = ${computerAnswer}]`);
         let realBart = computerValue.querySelector(".grumpybart");
         realBart.style.display = "block";
         alert("Bart says: oh no, im sleeping With the frogs tonight");
+        bartLost();
 
     }
 
 }
+
+/**
+ * functions to increment wrong and right score
+ * I've learned and copied the logic for this from Love Maths. tweaked for my game.
+ */
+function bartSaved() {
+    let bartSaved = (document.getElementById("bart-saved").innerText);
+    document.getElementById("bart-saved").innerText = ++bartSaved;
+}
+
+function bartLost() {
+    let bartLost = (document.getElementById("bart-lost").innerText);
+    document.getElementById("bart-lost").innerText = ++bartLost;
+}
+
 
 
 /**
