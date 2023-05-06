@@ -8,6 +8,8 @@ const choices = ["planet1", "planet2", "planet3"];
 //global variable for the computerAnswer
 var computerAnswer = "";
 
+let gameStarted = false;
+
 /**
  *functions and definitions 
  *to hide happy and sad bart unless I want them displayed
@@ -34,9 +36,9 @@ for (let grumpybart of grumpyBarts) {
 const startGame = document.getElementById("start-game");
 startGame.addEventListener("click", function () {
     
-    if(startGame.innerText === "Start Game!"){
-        startGame.innerText = "Choose a planet!"
-    }
+    if (startGame.innerText === "Start Game!" || startGame.innerText === "Play Again!") {
+        startGame.innerText = "Choose a planet!";
+      }
 
     for (let happybart of happyBarts) {
         happybart.style.display = "none";
@@ -47,6 +49,7 @@ startGame.addEventListener("click", function () {
     }
     let computerChoice = choices[Math.floor(Math.random() * choices.length)]
     computerAnswer = computerChoice;
+    gameStarted = true;
 });
 
 
@@ -59,8 +62,10 @@ startGame.addEventListener("click", function () {
 for (let button of buttons) {
 
     button.addEventListener("click", function () {
+        if(gameStarted){
         let playerChoice = this.getAttribute("data-type");
         checkWinner(playerChoice, computerAnswer);
+        }
     });
 
 }
@@ -76,6 +81,8 @@ function checkWinner(playerChoice, computerAnswer) {
         realBart.style.display = "block";
         alert("Bart: thank you, you saved me!")
         bartSaved();
+        gameStarted = false;
+        startGame.innerText = "Play Again!"
 
     } else {
         let computerValue = document.querySelector(`[data-type = ${computerAnswer}]`);
@@ -83,6 +90,8 @@ function checkWinner(playerChoice, computerAnswer) {
         realBart.style.display = "block";
         alert("Bart says: oh no, im sleeping With the frogs tonight");
         bartLost();
+        gameStarted = false;
+        startGame.innerText = "Play Again!"
 
     }
 
