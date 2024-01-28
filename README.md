@@ -2,7 +2,7 @@
 
 Find Bart is a fun game for those who love cats and space where the user must find the planet Bart is lost in. It has an interactive UI and can be played easily on any device anywhere. 
 
-![responsive Mockup](/Find-Bart/assets/images/responsive.jpg)
+![responsive Mockup](assets/images/responsive.jpg)
 
 ## Features
 
