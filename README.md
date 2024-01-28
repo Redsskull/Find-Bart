@@ -10,7 +10,7 @@ Find Bart is a fun game for those who love cats and space where the user must fi
 
 - The 3 planets, some text about the game, and a scorekeeper.
 
-![game area](/Find-Bart/assets/images/game-area.jpg)
+![game area](assets/images/game-area.jpg)
 
 - __background image__
 
@@ -20,7 +20,7 @@ Find Bart is a fun game for those who love cats and space where the user must fi
 
 - The footer is there just to be cute. features a fun fact about Bart the cat and an icon of a basketball. 
 
-![footer](/Find-Bart/assets/images/footer.jpg)
+![footer](assets/images/footer.jpg)
 
 ### Features Left to Implement
 
@@ -39,6 +39,13 @@ Find Bart is a fun game for those who love cats and space where the user must fi
 
  - Found out that storing a hyperlink as a button in a div is a bad idea. the button became invisible. fixed by making the div the button. 
 
+ | Test | Action| Expectation | Result |
+|------|-------|-------------|--------|
+|Home page|Responsive to 320|Elements size to 320px|Works as intended|
+|Home page|Responsive to 1920|Elements size to 1920px|Works as intended|
+|Home page|Instructions button |explainations appear |Works as intended |
+|planets as button |user is able to interact with the planets when the game is active|Random location of Bart per game, cannot click when inactive|Works as intended|
+
  ### Validator testing
 
 - HTML
@@ -46,7 +53,7 @@ Find Bart is a fun game for those who love cats and space where the user must fi
 - CSS
   - No errors were found when passing through the official [Jigsaw validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fredsskull.github.io%2FFind-Bart%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 - JS
-  - No errors were found when passing through the official Jshint validator. ![Jshint validator](/Find-Bart/assets/images/jshint.jpg)
+  - No errors were found when passing through the official Jshint validator. ![Jshint validator](assets/images/jshint.jpg)
 
 
   
