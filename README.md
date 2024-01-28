@@ -22,6 +22,12 @@ Find Bart is a fun game for those who love cats and space where the user must fi
 
 ![footer](assets/images/footer.jpg)
 
+- __404 page__
+
+- a 404 page was added for good practice habits 
+
+![footer](assets/images/404.jpg)
+
 ### Features Left to Implement
 
 - Would like music to be played while the player is playing the game
@@ -59,6 +65,13 @@ Find Bart is a fun game for those who love cats and space where the user must fi
   
 
  ## Deployment
+ - The site was deployed to GitHub pages. The steps to deploy are as follows:
+
+- in Github repository I clicked settings.
+
+- I then navigated to the pages tab, where I seleted deploy from branch. the branch selected was the "main" branch.
+
+- Click "Deploy". after a few minutes, refreshing the page should now include a link to the deployed website at the top.
 
 - The site was deployed using Github pages. the link can be found here - https://redsskull.github.io/Find-Bart/
 
